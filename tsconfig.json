@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "target": "es5",
+    "module": "commonjs",
+    "strict": false,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": ["webpack-env"],
+    "allowJs": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "@components/*": ["./src/components/*"],
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+
+  },
+  "include": [
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}
